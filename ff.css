@@ -1,0 +1,33 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0a0a0a;
+    color: #a0a0a0;
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    gap:10%;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    gap : 1rem;
+    margin:1rem;
+    margin-bottom: 0;
+}
+.nav1 a:hover{
+    color: #CAFF00;
+}
+.nav2 a:hover{
+    color: #CAFF00;
+}
+.nav3 a:hover{
+    color: #CAFF00;
+}
+.nav4 a:hover{
+    color: #CAFF00;
+}
