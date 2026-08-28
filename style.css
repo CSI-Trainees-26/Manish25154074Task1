@@ -79,7 +79,7 @@ body{
     width: 100%;
     max-width: 1200px;
     height: 100vh;
-    background-image: url("igris-hero.gif");
+    background-image: url("igris-hero\ \(1\).gif");
     background-size:cover;
     background-repeat:no-repeat;
     margin:auto ;
@@ -214,7 +214,7 @@ body{
 }
 
 .plat1:hover,.plat2:hover,.plat3:hover,.plat4:hover{
-     box-shadow:2px 2px 15px goldenrod ;
+    box-shadow:2px 2px 15px goldenrod ;
     transform:scale(1.1);
 
 }
@@ -242,7 +242,6 @@ body{
 .aCard {
     width:90%;
     max-width:900px;
-    height:70vh;
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap:2rem;
