@@ -1,10 +1,25 @@
-/* @font-face {
-    font-family: 'khachra';
-    src: url('KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2');
-} */
-
+@font-face {
+    font-family: "f1";
+    src: url("2npzrkhntw3le9sc/Malison.ttf") format("truetype");
+}
+@font-face {
+    font-family: "f2";
+    src: url("rigter-font/rigter.otf") format("truetype");
+}
+@font-face {
+    font-family: "f3";
+    src: url("sparling-font/sparling-italic.otf") format("truetype");
+}
+@font-face {
+    font-family: "f4";
+    src: url("reglass-refractive-serif-font/reglass.otf") format("truetype");
+}
 *{
      box-sizing: border-box;
+}
+h3{
+    font-family: "f2";
+    letter-spacing: 2px;
 }
 body{
     width: 100%;
@@ -16,12 +31,16 @@ body{
     color: #a0a0a0;
    
 }
+.logo{
+    font-family: "f3";
+}
 .line2{
     border: 1px solid white;
 }
 
 /* navigation */
 .navi{
+    font-family: "f1";
     display: flex;
     justify-content: space-between;
     gap:10%;
@@ -68,18 +87,21 @@ body{
 }
 
 #hero h1{
+    font-family: "f3";
     position:absolute;
-    top:43%;
+    top:33%;
     left:60%;
     color:red;
-    font-weight: 600;
+    font-weight: 550;
     font-size:3rem;
-    /* font-family: 'khachra'; */
+    
 }
 #hero p{
-    width:40%;
+    z-index: 99;
+    font-family: "f1";
+    width:38%;
     position:absolute;
-    top:55%;
+    top:45%;
     left:60%;
 
 }
@@ -92,6 +114,7 @@ body{
 /* trending games section*/
 #head{
     text-align:center;
+    color: #CAFF00;
     margin: 3rem;
 }
 
@@ -104,6 +127,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap:2rem;
     margin-bottom: 1rem;
+    
  }
 
 .game1 img{
@@ -130,7 +154,9 @@ body{
       align-content:center ;
       gap:2%;
       padding: 1%;
-      margin:auto;
+      margin:4rem auto;
+      margin-bottom: 0;
+      transition: transform 0.5s ease-in-out;
      
 }
 .plat1,.plat2,.plat3,.plat4{
@@ -188,7 +214,9 @@ body{
 }
 
 .plat1:hover,.plat2:hover,.plat3:hover,.plat4:hover{
-     box-shadow:0px 0px 10px gray ;
+     box-shadow:2px 2px 15px goldenrod ;
+    transform:scale(1.1);
+
 }
 
 @media (max-width: 768px){
@@ -207,7 +235,8 @@ body{
 .aTitle{
     display: flex;
     justify-content: center;
-    margin: 1%;
+    color: #CAFF00;
+    margin-bottom: 1rem;
 
 }
 .aCard {

@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "f1";
+    src: url("2npzrkhntw3le9sc/Malison.ttf") format("truetype");
+}
+@font-face {
+    font-family: "f2";
+    src: url("rigter-font/rigter.otf") format("truetype");
+}
+@font-face {
+    font-family: "f3";
+    src: url("sparling-font/sparling-italic.otf") format("truetype");
+}
+@font-face {
+    font-family: "f4";
+    src: url("reglass-refractive-serif-font/reglass.otf") format("truetype");
+}
+
 body{
     width: 100%;
     min-height: 100vh;
@@ -12,12 +29,20 @@ body{
     justify-content: space-between;
     gap:10%;
 }
+.logo img{
+    width: 100%;
+    max-width: 10vw;
+}
 .nav{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     gap : 1rem;
     margin:1rem;
-    margin-bottom: 0;
+    /* background-color: red; */
+}
+.navi{
+    text-decoration: none;
 }
 .nav1 a:hover{
     color: #CAFF00;
