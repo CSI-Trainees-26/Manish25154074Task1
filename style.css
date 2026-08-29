@@ -35,7 +35,7 @@ body{
     font-family: "f3";
 }
 .line2{
-    border: 1px solid white;
+    border: 1px solid #333;
 }
 
 /* navigation */
@@ -48,9 +48,17 @@ body{
 .nav{
     display:flex;
     justify-content: space-between;
-    gap : 1rem;
-    margin:1rem;
     margin-bottom: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: #0a0a0a;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
 }
 .nav1 a:hover{
     color: #CAFF00;
@@ -66,7 +74,7 @@ body{
 }
 
 .line0{
-    border: 1px solid white;
+    border: 1px solid #333;
 }
 
 .navi a{
@@ -80,7 +88,9 @@ body{
     max-width: 1200px;
     height: 100vh;
     background-image: url("igris3.png");
+    animation: slideRight 2s ease forwards;
     background-size:cover;
+    background-position: center;
     background-repeat:no-repeat;
     margin:auto ;
     position: relative;
@@ -165,11 +175,12 @@ body{
 
 
 /* platform selector */
-.platform{
+#platform{
       width:100%;
       max-width: 900px;
       height: 20vh;
       display:flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
       align-content:center ;
       gap:2%;
@@ -185,6 +196,7 @@ body{
     height: 10vh;
     border-radius: 3%;
     background-color: #11812fcd;
+    transition: transform 0.3s ease;
 }
 
 .card1{
@@ -229,13 +241,13 @@ body{
     margin-left: 3%;
 }
 
-.platform img{
+#platform img{
     margin: 0;
 }
 
 .plat1:hover,.plat2:hover,.plat3:hover,.plat4:hover{
-    box-shadow:2px 2px 15px goldenrod ;
-    transform:scale(1.1);
+    box-shadow:0px 1px 10px rgb(252, 255, 54) ;
+    transform:translateY(5px);
 
 }
 
@@ -287,10 +299,67 @@ body{
 }
 
 /* footer */
-.footer{
-    width: 100%;
+
+#footer {
+    background-color: #080808;
+    border-top: 1px solid #333;
+    padding: 3rem 5%;
+    margin-top: 4rem;
+}
+
+.footercontainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
     max-width: 1200px;
-    height: 40vh;
-    border:2px solid #a0a0a0;
-    background-color: #0a0a0a;
+    margin: auto;
+}
+
+.footerbox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footerbox h2 {
+    color: goldenrod;
+    margin: 0;
+}
+
+.footerbox h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footerbox p {
+    line-height: 1;
+    color: #999;
+    margin: 0;
+}
+
+.footerbox a {
+    color: #999;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.footerbox a:hover {
+    color: goldenrod;
+    transform: translateX(5px);
+}
+
+.footerbottom {
+    max-width: 1200px;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #777;
+    font-size: smaller;
+}
+#footer p{
+    margin :auto;
 }
